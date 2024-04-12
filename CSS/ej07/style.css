@@ -1,0 +1,124 @@
+input[type="checkbox"] {
+    opacity: 100%;
+}
+
+.div-cuadrado, .div-redondeado, .div-circular {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    margin-right: 10px;
+    transition: transform 0.3s ease; 
+}
+
+.checkbox-row input[type="checkbox"]:checked ~ td:nth-child(n+2) .div-cuadrado,
+.checkbox-row input[type="checkbox"]:checked ~ td:nth-child(n+2) .div-redondeado,
+.checkbox-row input[type="checkbox"]:checked ~ td:nth-child(n+2) .div-circular {
+    transform: rotate(45deg);  
+}
+
+.checkbox-row:hover .div-cuadrado,
+.checkbox-row:hover .div-redondeado,
+.checkbox-row:hover .div-circular {
+    transform: translate(0, -10px); 
+}
+.tabla {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: minmax(50px, auto); 
+    gap: 5px; 
+}
+th, td {
+    padding: 10px; 
+    text-align: center; 
+    border-width: 3px;
+    border-style: solid;
+}
+
+.div-cuadrado, .div-redondeado, .div-circular {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    margin-right: 10px;
+    transform: rotate(45deg);
+    transition: transform 0.3s;
+}
+td:hover .div-cuadrado.rotado,
+td:hover .div-redondeado.rotado,
+td:hover .div-circular.rotado {
+    transform: rotate(0deg);
+}
+
+.div-redondeado {
+    border-radius: 25%;
+}
+.div-circular {
+    border-radius: 50%;
+ 
+}
+
+
+td:nth-child(2) .div-cuadrado,
+td:nth-child(2) .div-redondeado,
+td:nth-child(2) .div-circular {
+    background-color: red;
+}
+
+td:nth-child(3) .div-cuadrado,
+td:nth-child(3) .div-redondeado,
+td:nth-child(3) .div-circular {
+    background-color: blue;
+}
+
+td:nth-child(4) .div-cuadrado,
+td:nth-child(4) .div-redondeado,
+td:nth-child(4) .div-circular {
+    background-color: green;
+}
+
+td:nth-child(5) .div-cuadrado,
+td:nth-child(5) .div-redondeado,
+td:nth-child(5) .div-circular {
+    background-color: yellow;
+}
+td:nth-child(6) .div-cuadrado,
+td:nth-child(6) .div-redondeado,
+td:nth-child(6) .div-circular {
+    background-color: purple;
+}
+
+
+td:nth-child(5n+1) {
+    border-color: red; 
+}
+
+td:nth-child(5n+2) {
+    border-color: blue;
+}
+
+td:nth-child(5n+3) {
+    border-color: green;
+}
+
+td:nth-child(5n+4) {
+    border-color: yellow; 
+}
+td:nth-child(5n+5) {
+    border-color: purple; 
+}
+
+td:nth-child(10n+1) {
+    border-style: solid; 
+}
+
+td:nth-child(10n+2) {
+    border-style: dashed; 
+}
+
+td:nth-child(10n+3) {
+    border-style: dotted;
+}
+
+td:nth-child(10n+4) {
+    border-style: double;
+}
+

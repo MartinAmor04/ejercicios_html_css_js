@@ -1,17 +1,16 @@
+.contenedor-flex {
+    display: flex;
+}
 .div-cuadrado, .div-redondeado, .div-circular {
     width: 50px;
     height: 50px;
-    display: inline-block;
     margin-right: 10px;
 }
-
 .div-redondeado {
     border-radius: 25%;
 }
 .div-circular {
     border-radius: 50%;
-
-    
 }
 
 .div-cuadrado:nth-child(1), .div-redondeado:nth-child(1), .div-circular:nth-child(1) {

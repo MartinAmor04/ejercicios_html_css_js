@@ -1,0 +1,11 @@
+.container {
+    width: 60%; 
+    height: 400px; 
+    background-image: url('dead_poets_society-458617909-mmed.jpg');
+    background-size: contain; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}

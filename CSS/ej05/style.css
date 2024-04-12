@@ -1,0 +1,60 @@
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+}
+
+.fila {
+    display: flex;
+    justify-content: flex-start; 
+    margin-bottom: 10px;
+}
+
+.contenedor.final {
+    align-items: flex-end;
+}
+
+.fila.final {
+    justify-content: flex-end;
+}
+
+.contenedor.espaciado {
+    align-items: center;
+}
+
+.fila.espaciado {
+    justify-content: space-between;
+    width: 100%;
+}
+
+.contenedor.invertido {
+    flex-direction: column-reverse;
+}
+
+.cuadrado {
+    width: 50px;
+    height: 50px;
+    margin: 0 5px;
+}
+
+.rojo {
+    background-color: red;
+}
+
+.azul {
+    background-color: blue;
+}
+
+.verde {
+    background-color: green;
+}
+
+.amarillo {
+    background-color: yellow;
+}
+
+.morado {
+    background-color: purple;
+}
+
+
